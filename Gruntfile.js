@@ -286,4 +286,15 @@ module.exports = function (grunt) {
     'ngmin',
     'uglify'
   ]);
+
+  grunt.registerTask('dev-no-uglify', [
+    'useminPrepare',
+    'imagemin',
+    'htmlmin',
+    'concat',
+    'copy',
+    'cdnify',
+    'usemin',
+    'ngmin'
+  ]);
 };
